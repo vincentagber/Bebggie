@@ -145,43 +145,50 @@ footer a:hover {
 }
 
 /* Meet Julius Section */
-@keyframes colorChange {
-            0% { color: #002147; }
-            33% { color: #87CEEB; }
-            66% { color: #6E272D; }
-            100% { color: #002147; }
-        }
-
-   .meet-julius {
+.meet-julius {
     position: relative;
     background: url('/images/profile.jpeg') no-repeat center center/cover;
-    padding: 10rem 1rem; 
+    padding: 2rem 1rem; 
     text-align: center;
     color: white;
-    min-height: 500px; /* Increased height */
+    min-height: 600px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.meet-julius h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem; /* Add some top margin to push it down a bit */
+    margin-bottom: 1rem;
+    animation: colorChange 5s infinite;
+}
+
+.meet-julius .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #5704bd;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem; 
+}
+
+.meet-julius .cta-button:hover {
+    background-color: #5a1d21;
+}
+
+@keyframes colorChange {
+    0% { color: #002147; } /* Deep Blue */
+    33% { color: #87CEEB; } /* Sky Blue */
+    66% { color: #5704bd; } /* Red Oxide */
+    100% { color: #002147; } /* Deep Blue */
 }
 
 
-        .meet-julius h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            animation: colorChange 5s infinite;
-        }
-
-        .meet-julius .cta-button {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: #6E272D;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .meet-julius .cta-button:hover {
-            background-color: #5a1d21;
-        }
 
 /* About Julius Section */
 .about-julius {
